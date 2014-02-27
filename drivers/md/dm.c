@@ -192,7 +192,7 @@ struct mapped_device {
 	struct hd_geometry geometry;
 
 	/* kobject and completion */
-	struct dm_kobject_holder kobj_holder
+	struct dm_kobject_holder kobj_holder;
 
 	/* zero-length flush that will be cloned and submitted to targets */
 	struct bio flush_bio;
@@ -2683,7 +2683,7 @@ struct gendisk *dm_disk(struct mapped_device *md)
 
 struct kobject *dm_kobject(struct mapped_device *md)
 {
-	return &md->kobj;
+	return &md->kobj_holder.kobj;
 }
 
 struct mapped_device *dm_get_from_kobject(struct kobject *kobj)
