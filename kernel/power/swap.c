@@ -430,6 +430,10 @@ static int swap_writer_finish(struct swap_map_handle *handle,
 /* Minimum/maximum number of pages for read buffering. */
 #define LZO_MIN_RD_PAGES	1024
 #define LZO_MAX_RD_PAGES	8192
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3cf72c9c7fc24ca289bc7837a40c64a356f6f07d
 
 /**
  *	save_image - save the suspend image data

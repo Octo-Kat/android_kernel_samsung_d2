@@ -421,7 +421,6 @@ static int fd_do_task(struct se_task *task)
 		ret = fd_do_readv(task);
 	} else {
 		ret = fd_do_writev(task);
-
 		/*
 		 * Perform implict vfs_fsync_range() for fd_do_writev() ops
 		 * for SCSI WRITEs with Forced Unit Access (FUA) set.

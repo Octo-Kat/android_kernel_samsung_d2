@@ -62,7 +62,6 @@
 #define X_MAX_POSITIVE (((1 << ABS_POS_BITS) + XMAX) / 2)
 #define Y_MAX_POSITIVE (((1 << ABS_POS_BITS) + YMAX) / 2)
 
-
 /*
  * Synaptics touchpads report the y coordinate from bottom to top, which is
  * opposite from what userspace expects.

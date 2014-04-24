@@ -830,7 +830,6 @@ int qib_user_sdma_writev(struct qib_ctxtdata *rcd,
 		const int mxp = 8;
 
 		ret = qib_user_sdma_queue_pkts(dd, pq, &list, iov, dim, mxp);
-
 		if (ret <= 0)
 			goto done_unlock;
 		else {
